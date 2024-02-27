@@ -59,10 +59,10 @@
             @Html.DisplayFor(modelItem => item.FigliACarico)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            @Html.ActionLink("pagamento", "pagamento", new { id = item.IdDipendente })
+            @Html.ActionLink("Edit", "Edit", new {  id=item.IdDipendente  }) |
+            @Html.ActionLink("Dettagli", "Dettagli", new { id=item.IdDipendente }) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.IdDipendente  })
+            
         </td>
     </tr>
 }

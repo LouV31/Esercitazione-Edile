@@ -18,7 +18,7 @@ namespace Esercitazione_Edile.Controllers
             try
             {
                 conn.Open();
-                string query = "SELECT * FROM Pagamenti";
+                string query = "SELECT * FROM Pagamenti ORDER BY dataPagamento ASC ";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
